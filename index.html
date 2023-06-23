@@ -1,0 +1,30 @@
+<!--Ravi Patel ravi_patel1@student.uml.edu-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="js/input.js"></script>
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Ravi Patel's Multiplication Table Generator</h1>
+    <!--form-->
+    <form id="x_y_input">
+      X start: <input type="text" name="x_s" id="x_start"><br>
+      X end: <input type="text" name="x_e" id="x_end"><br>
+      Y start: <input type="text" name="y_s" id="y_start"><br>
+      Y end: <input type="text" name="y_e" id="y_end"><br><br>
+      <!--draw table on submit click (do not actually submit form)-->
+      <input type="button" onclick="draw_table()" value="Submit">
+    </form>
+    <!--wrap table with container for table-->
+    <div id="container">
+    <div id="info"></div>
+    </div>
+    <!-- warning text placeholder-->
+    <p id="demo"></p>
+    <script src="js/input.js"></script>
+  </body>
+</html>
